@@ -7,7 +7,7 @@ function comparandoNumeros(numero1, numero2) {
         console.log(`Os numeros ${numero1} e ${numero2} não são iguais.`);
         if(soma > 10) {
             console.log(`Sua soma é: ${soma} que é maior que 10.`);
-        }else if(soma > 20) {
+        }else if(soma > 10 && soma >= 20) {
             console.log(`Sua soma é: ${soma} que é maior que 20.`)
         } 
     }
@@ -18,9 +18,9 @@ function comparandoNumeros(numero1, numero2) {
     }
     if(soma < 10) {
         console.log(`Sua soma é: ${soma} que é menor que 10.`);
-    } else if(soma < 20) {
+    } else if(soma < 10 && soma <= 20) {
         console.log(`Sua soma é: ${soma} que é menor que 20.`)
     } 
 }
 
-comparandoNumeros(1, 2);
+comparandoNumeros(10, 10);
